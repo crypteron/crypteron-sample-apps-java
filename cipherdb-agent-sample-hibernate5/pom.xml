@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>cipherdb-agent-sample-hibernate5</artifactId>
+  <name>CipherDB Hibernate 5.x Agent Sample App</name>
+
+  <parent>
+    <groupId>com.crypteron</groupId>
+    <artifactId>java-sample-applications</artifactId>
+    <version>2019.6.1.0</version>
+  </parent>
+
+  <dependencies>
+    <!-- Crypteron -->
+    <dependency>
+      <groupId>com.crypteron</groupId>
+      <artifactId>cipherdb-agent-sample-common</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.crypteron</groupId>
+      <artifactId>cipherdb-agent-hibernate5</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.crypteron.cipherdb.sample.hibernate5.Hibernate5SampleApp</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>

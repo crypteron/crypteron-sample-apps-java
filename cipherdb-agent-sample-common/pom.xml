@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>cipherdb-agent-sample-common</artifactId>
+  <name>CipherDB Sample App Common Code</name>
+
+  <parent>
+    <groupId>com.crypteron</groupId>
+    <artifactId>java-sample-applications</artifactId>
+    <version>2019.6.1.0</version>
+  </parent>
+
+  <dependencies>
+    <!-- Crypteron -->
+    <dependency>
+      <groupId>com.crypteron</groupId>
+      <artifactId>cipherobject</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+    </dependency>
+  </dependencies>
+</project>
