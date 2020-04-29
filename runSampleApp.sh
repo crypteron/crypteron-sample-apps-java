@@ -8,7 +8,7 @@ if grep -q "appSecret=Replace" $propFile
 then
   echo 
   echo "Please setup crypteron.appSecret setup in \""$propFile"\""
-  echo "by running  setAppSecret.sh or followning the readme.md."
+  echo "by running setAppSecret.sh or following the readme.md instructions."
   echo
   echo "Aborting ! "
   echo
